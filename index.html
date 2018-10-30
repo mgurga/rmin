@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport">
+          <title>reddit-min</title>
+     </head>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+
+     <body>
+          <div id="navBar">
+
+               <div>
+                    <div id="subredditNavBar" class="wiggleRoom"></div>
+
+                    <div id="downloadOptions" style="display:none">
+                         <h1>-------------------------</h1>
+                         <h2>Download Menu</h2>
+                         <br><br>
+                         <h3 id="downloadDisplay"></h3>
+                         <br><br>
+                         <h3>Posts to download</h3>
+                         <br>
+                         <input id="postsToDownload" type="number" value="50"></input>
+                         <br>
+                         <button id="downloadSubs">Download</button>
+                         <progress value="0" max="100" id="downloadProgress"></progress>
+                         <h1>-------------------------</h1>
+                    </div>
+
+                    <h1>minimised-reddit</h1>
+
+                    <h2>
+                         r/</h2>
+                    <input id="subIn" class="textbox"></input>
+                    <button id="subEnterButton" onclick="goClicked()">GO</button>
+                    <br>
+                    <h2>browser other subreddits ^^</h2>
+                    <br>
+                    <br>
+                    <br>
+                    <h2 id="subredditDisplay"></h2>
+                    <br>
+                    <br>
+               </div>
+               <div id="mainPage"></div>
+          </body>
+
+          <style>
+               html {
+                    background-color: rgb(8, 8, 8);
+               }
+
+               a,
+               h1,
+               h2,
+               h3,
+               h4,
+               h7,
+               h8,
+               p {
+                    color: white;
+               }
+
+               div {
+                    border: 1px solid lime;
+                    word-wrap: break-word;
+               }
+
+               a:hover {
+                    cursor: pointer;
+                    font-weight: bold;
+               }
+
+               h2,
+               h3,
+               h4,
+               h7,
+               h8 {
+                    margin-left: 40;
+                    padding: 0;
+                    display: inline;
+               }
+
+               body {
+                    font-family: Arial, Helvetica, sans-serif;
+               }
+
+               img {
+                    margin-right: 10px;
+               }
+
+               .textbox {
+                    width: 300px;
+                    height: 30px;
+                    font-size: 15pt;
+               }
+
+               .wiggleRoom {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    font-size: 16;
+               }
+
+               .postText {
+                    white-space: normal;
+               }
+          </style>
+
+          <script src="reddit-min.js"></script>
+
+          <!-- <footer> by [cursive-letters] </footer> -->
+
+     </html>
